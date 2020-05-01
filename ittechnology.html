@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Technology</title>
+<style>
+body {margin:0;font-family: Arial, Helvetica, sans-serif;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fb6444;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.header{
+ width: 100%;
+ height: 125px;
+ background-color: #999;
+}
+.footer{
+ width: 100%;
+ background-color: #333;
+ color: grey;
+ padding: 4px;
+}
+
+list {
+  display: inline-block;
+}
+
+list a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+list a:hover, .dropdown:hover .dropbtn {
+  background-color: #e55e41;
+}
+
+list.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color:  #fb6444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.active {
+  background-color:#c05139;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+</style>
+</head>
+<body>
+
+
+<div class="header"></div>
+
+<ul id="navbar">
+  <list><a href="#teamprofile">Team Profile</a></list>
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/tools.html">Tools</a></list>
+  <list><a href="#industrydata">Industry Data</a></list>
+  <list><a href="#itwork">IT Work</a></list>
+
+  <list class="dropdown">
+    <a class="active" href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html" class="dropbtn">IT Technology</a>
+    <div class="dropdown-content">
+      <a href="#cloudcomputing">Cloud Computing</a>
+      <a href="#augmentedreality">Augmented Reality</a>
+      <a href="#cybersecurity">Cyber Security</a>
+      <a href="#machinelearning">Machine Learning</a>
+    </div>
+  </list>
+  
+  
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/projectideas.html">Project Ideas</a></list>
+  <list><a href="#feedback">Feedback</a></list>
+  <list><a href="#groupreflection">Group Reflection</a></list>
+    <list class="dropdown">
+    <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html" class="dropbtn">Extra</a>
+    <div class="dropdown-content">
+      <a href="#references">References</a>
+      <a href="#meetings">Meetings</a>
+    </div>
+  </list>
+</ul>
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script>
+
+
+
+<div style="  margin-right:15%;
+  margin-left: 15%;margin-top:5%; font-family: Arial, Helvetica, sans-serif;">
+  <h1 style="text-align: center;">Assignment 2</h1>
+  <h2 style="text-align: center;"id="cloudcomputing">IT Technology</h2>
+  
+  <br><br>
+  <h3 style="text-align: center;">Cloud Computing</h3>
+  <h3 style="text-align: center;">1. What does it do? What is the state of the art of this new technology? What can be done now? What is likely to be able to do be done soon (say in the next 3 years)? What technological or other developments make this possible?</h3>
+  <p>Cloud computing refers to the use of remote servers on a network used to store, manage, and process data on the ‘cloud’. Without cloud computing, companies would have to spend resources on expensive physical IT infractures and maintenance. However, with cloud computing, it allows companies to simply access a variety of services such as computing power, servers and storage over the internet whenever it is needed - thus the term, “on demand”. It is relatively resource efficient as companies are only required to pay for what they only need, minimising potential excess resources typically associated with maintaining physical hardware. There are generally 4 types of cloud deployments which include the public, private, hybrid, and community cloud.<br><br>
+Public clouds examples include those offered by Microsoft, Google, and Amazon. Essentially, with public clouds, infrastructure and services are located on the establishment of a separate company that offers cloud computing services. Public clouds tend to have an abundance of available storage which naturally correlates to high and easy scalability. The services and infrastructure on public clouds provided by cloud computing companies are typically shared by all customers.<br><br>
+Private clouds differ to public clouds in how computing infrastructure and services are hosted, owned, and utilized only by a single organization - not being shared with any other party or establishment. Although less economical, private clouds offer higher levels of control and security as they are situated behind a protective firewall. Additionally, since private clouds are operated and hosted by the company itself, the risk of sudden external changes affecting the entire infrastructure is significantly reduced.<br><br>
+Hybrid clouds are often described to provide the best of both aspects and services of public and private clouds. Hybrid clouds offer the large scalability of a public cloud with the high level of security and control of a private cloud. Hypothetically, an organisation could have their most important and sensitive data stored and encrypted behind their firewall before securely transitioning to a more public environment when necessary.<br><br>
+Community clouds are shared between organisations or specific associations that share a common goal. Community clouds allow for a relatively easy way to achieve an easy-to-access and a highly functional collaborative environment to achieve a shared goal. 
+Despite its sizable history, cloud computing can be considered to still be in its early stages with multiple years of growth yet to uncover. Technological advances in services such as video streaming platforms and augmented reality are becoming highly relevant in today’s modern age. Considering a potential external technological breakthrough in the future, it could result in a very high demand in the further development of cloud computing technology.
+</p>
+  <h3 style="text-align: center;">2. What is the likely impact? What is the potential impact of this development? What is likely to change? Which people will be most affected and how? Will this create, replace or make redundant any current jobs or technologies?</h3>
+  <p>Further advancement within the cloud computing industry may encourage businesses to migrate from expensive physical hardware to cloud computing. Businesses that are already using physical hardware may also consider adopting cloud computing alongside their physical infrastructure. Most new businesses might often begin to consider starting with cloud computing, especially businesses who see themselves in quick demand of extra computing power or storage. A hybrid cloud that goes beyond combining aspects of the public and private clouds may find itself appealing to a large quantity of pre-existing or future companies. Considering the continued development of cloud computing, certain jobs and fields will definitely be affected. For instance, those who work in a datacenter may lose their job if the company that they are working for decides to fully migrate to cloud computing. Administrative positions including those on the help desk might also fall in demand if their company decides to transition to cloud computing. Those in this field may find themselves working for remote cloud computing service providers on the help desk or system support. 
+<br><br>
+The impact that cloud computing has on the world now, is that it allows people from all around the world, work together. For example, being stuck in isolation at home right now during this global pandemic, many companies are unable to hold physical meetings with anyone. The use of cloud computing technology allows companies to share their resources with one another to work together despite not being in the same room. This allows the world to move forward and advance faster than waiting around for people to send hundreds of documents to each other, making work more efficient and seamless. 
+</p>
+  <h3 style="text-align: center;">3. How will this affect you? In your daily life, how will this affect you? What will be different for you? How might this affect members of your family or your friends?</h3>
+  <p>future for cloud computing mainly lies in online streaming and exchanging data, containing information, between devices faster than ever before. However cloud computing is already having a great influence in the world right now. One of the impacts is making online connectivity much easier and faster to access. We go onto the internet everyday and watch videos on Youtube, Netflix, Facebook, Twitter, Twitch and many more only video services not worrying about lag and buffering. We go onto Google, DuckDuckGo, Bing and Wikipedia to search through to find the answers to our questions almost instantly. We can carry a small device with access to huge chunks of data and information without the need to carry a hard drive. Our friends and family can even easily transfer their data such as their personal photos from one device to another device easily and securely. <br><br>
+In fact right now, during the COVID-19 outbreak, cloud computing is making it possible for schools and universities to stream their classes and lectures live to the students around the world. Cloud computing right now is also making it easier for people to work from home where they can do online meetings and share their data easily.</p>
+  <h2 style="text-align: center;"id="augmentedreality"></h2>
+  <br><br><br><br>
+  <h3 style="text-align: center;">Augmented Reality</h3>
+  <h3 style="text-align: center;">1. What does it do? What is the state of the art of this new technology? What can be done now? What is likely to be able to do be done soon (say in the next 3 years)? What technological or other developments make this possible?</h3>
+  <p>Augmented reality is often referred to as 'AR'. To put it simply, it is a way to display a picture on your device but in your real environment. Usually on a phone, it uses the phone's camera to capture the environment around the user (in real time) and displays on the screen what the user wants to see. At the moment, there are a few different implications of AR. A very common example is the Ikea's AR app (IKEA Place) where users are able to use their phone to see how a piece of furniture would look in their very own home before purchasing it in store. A similar function is also seen in the global e-market, Amazon. These apps are very useful for planning and redecorating purposes. Contrary to popular belief of Augmented Reality being a technology of the future, it has existed since the 1990s. According to Emspak (2018), Augmented reality was used to show information such as speed, altitude and direction of the fighter jet on the pilot’s heads-up displays.
+Augmented reality is a technology that is integrated into many aspects in a person’s life through different programs. However, the technology is not developed well enough to provide consumers with affordable gadgets that use AR. One of the most popular tech equipment that uses AR is Google’s ‘Google Glass’, which was popular for its functionality but ultimately did not gain much traction due to its high price point. However, mobile app developers saw an opportunity to use AR for their products. Current smartphones are much more capable of handling technology such as Augment Reality than even the desktops or laptops were able to when AR was in its early age. Therefore, it can be concluded that Augmented Reality is still in a late development stage.<br><br>
+ There are several uses for Augmented Reality in the present day. These uses are mainly done through a smartphone. As mentioned before, companies such as Amazon and IKEA have utilized Augmented Reality to give their customers a virtual view of how the product will look like in their home. Augmented Reality has also been integrated into the medical sector. AR is used in MRI equipment as well as when performing surgeries. According to Paine (2020), medical students at the Cleveland Clinic at Case Western Reserve University, have the ability to learn human anatomy via an AR headset. Though these are popular uses of AR, the most popular use of AR would be its integration into the gaming world. As mentioned before, for an everyday person, AR is most conveniently available to them through their smartphones. In recent times, smartphone or mobile gaming has gained a lot of popularity as smartphones become cheaper and powerful. The world saw the capability of Augmented Reality in 2016, when the game giant Nintendo released ‘Pokemon Go’. This game had heavy Augmented reality elements in the core game-play. Chamary (2018), has stated that Pokemon Go managed to be the mobile game that earned the fastest $100 million (though it was released as a free-to-play game) and the most downloaded in the first month of release. All of this proves the capability of Augmented Reality when it is implemented well.<br><br>
+Augmented reality is a technology that still has a lot of room to improve. Thus, it is safe to assume that in the next few years there would be a lot more real-world uses for Augmented Reality. Proper implementation of Augmented Reality will make improvements in any and every field. Doctors would be able to see their patient’s anatomy in real time. Islam (2018) states that AR can be used to display patients’ anatomy as well as guide surgeons in doctors with extreme accuracy in surgeries. On top of that people who are looking to buy a house will be able to view the particular house as if they were there. Early stages of this example have already allowed customers to access a 360° view of the house they want to buy. Therefore, it can be concluded that the near future of AR is quite promising.
+</p>
+  <h3 style="text-align: center;">2. What is the likely impact? What is the potential impact of this development? What is likely to change? Which people will be most affected and how? Will this create, replace or make redundant any current jobs or technologies?</h3>
+  <p>AR has impacted the world in various ways. AR allows military fighter pilots to project their altitude, speed and other important data from their helmet visors, reducing their need to look down and for these statistics.  Neurosurgeons are able to project 3D brains to aid them in surgeries to give them a realistic representation of the brain and allows them to see the brain in a bigger view to configure their needs. With even just these few examples, it goes to show how AR can really help present ideas in a new way. Many people are visual learners and by being able to see a product (if not created yet) with a 3D projection allows companies and investors to have a more realistic look at a fraction of the price of having a demo product. This also means that companies do not need to move a physical object around with the risks of leaking information, loss of the product and wasting time.<br><br>
+As discussed before, the uses of Augmented reality are many. In the medical field doctors will be able to look at human anatomy in a much more detailed and real manner, especially if Augmented Reality utilizes technologies such as holograms. On top of that, medical students can learn about human anatomy in a much more detailed manner. Manufacturers and inventors are able to see their product in detail before it is actually finished. Attractions such as museums can display how their exhibits looked like from the time they originate from, such as images of dinosaurs. Customers will be able to view products such as furniture to see if they would fit well in their home and even view a full house before it is bought, ending the need for jobs such as realtors. 
+</p>
+  <h3 style="text-align: center;">3. How will this affect you? In your daily life, how will this affect you? What will be different for you? How might this affect members of your family or your friends?</h3>
+  <p>Augmented reality takes the existing environment and adds a new layer of information on top of it. One of the impacts of AR is being able to do measurements without the need of a physical reference as it can measure the distance of two or more points quickly, accurately and efficiently. Speaking of measurements, AR can also allow businesses to show their products in real time to customers. For example, a furniture company can help customers to efficiently and easily choose a table by allowing the customer to see whether the dimensions and the aesthetic of the table fits the physical environment.<br>
+AR can also bring a greater interaction in the gaming industry. The 2D and 3D games instead of being shown on a flat screen, being brought to reality will take the immersion to a whole new level.<br>
+AR in the future can also do tasks that our mobile phones do but being more interactive with our daily life. One possible example is the AR goggles where you can do calls, messages and other tasks that our current devices do by using our hands or eyes to do gestures. Let’s say you can call someone by just a swipe of your eye from middle to right.<br>
+In other words, for us AR will revolutionise how we interact in our daily life and towards technology. AR in the future will make tasks easier to do and more efficient and this may make us and our families much lazier. In fact, AR will be much more easily accessible compared to our current devices, it will be part of us in the future.
+</p>
+  <h2 style="text-align: center;"id="cybersecurity"></h2>
+  <br><br><br><br>
+  <h3 style="text-align: center;">Cyber Security</h3>
+  <h3 style="text-align: center;">1. What does it do? What is the state of the art of this new technology? What can be done now? What is likely to be able to do be done soon (say in the next 3 years)? What technological or other developments make this possible?</h3>
+  <p>Cyber security is an added blanket of protection against cyberattacks. Cyber security blocks attackers from accessing critical information from someone. Cyberattacks are usually aimed towards businesses and people. This usually is to collect personal information about a particular user/business and to extort money from them. This can interrupt businesses by breaching their security and stopping a business from running. It challenges a business's integrity when a business that collects personal information gets a security breach in this way. Breaches in cyber security can result in loss of important data, identity theft and extortion. The most common cyber security threats are as follow: ransomware; malicious software that is designed to extort money by blocking access to particular files without the user paying up a fee to access these files (not always recoverable), phishing; fraudulent emails that appear as reputable sources, these are usually aimed to steal sensitive data such as credit card and login information, malware; software designed to damage a computer or to gain authorisation access, social engineering; using tactics to trick someone into giving their personal information away to give the attacker access to their sensitive information.
+<br><br>
+Things that can be done now with cybersecurity include the measures that people at home can do to protect themselves. Simple things like having an antivirus software to protect a computer and watching out for scam emails. In the next few years (5-10 years) companies could be looking towards creating cyberattacks for both their own safety and to attack others. Not only companies will be doing this in the future, but also things like robberies and common crimes will become digitalised. With this there will be more types of crimes, however there will also be an increase in cybersecurity for everyone. Mobile phones are constantly having security updates with their software updates, and these are to typically secure the data on a user’s phone. By updating regularly, sensitive information can be kept secure and out of reach for hackers. 
+<br><br>
+The importance of cybersecurity increases day by day with more people relying on computer systems, the internet and wireless networks. The growth of smart devices creates the network of ‘Internet of Things’ and by having all of these devices connected to one another, the importance of their security increases at a large. If there is a security breach on just one of them, there can be an increased risk in sensitive information being poached from other devices. By keeping the security on these devices up to date, it creates a stronger barrier on the cybersecurity of these devices. 
+</p>
+  <h3 style="text-align: center;">2. What is the likely impact? What is the potential impact of this development? What is likely to change? Which people will be most affected and how? Will this create, replace or make redundant any current jobs or technologies?</h3>
+  <p>The impact that cybersecurity has in the world is a really important amount. Cybersecurity protects all types of data, from how much money people have, where they live to what people like and interact with on Facebook. To many it might not seem like it would have a big impact, however the data being taken from them could potentially be sold off to someone in a foreign country. Once data has left a country, it’s rules and regulations then depend on the country it is entering. At the moment it is hard to contain sensitive information if it has been leaked overseas so it creates a bigger problem for those who have weak security. Sensitive data could include private information about a strategy that a company has to take over or attack another company, this can cause problems within the workforce as it would mean that there is a potential worker leaking information, or the cybersecurity of that workforce is weak. This keeps IT professionals working day and night to protect their data and to contain it as much as possible. Military equipment and breaches in national security secrets can leak and be a result of theft of valuable, sensitive data which may include personal medical records. If this data is breached, cyberattackers can paralyse these systems making the data unobtainable by medical professionals. This can be a threat to everyone from members of the government to the general public.</p>
+  <h3 style="text-align: center;">3. How will this affect you? In your daily life, how will this affect you? What will be different for you? How might this affect members of your family or your friends?</h3>
+  <p>Cybersecurity threats are extremely common in today's world. According to (Rouse, 2020) there are multiple forms of cyber threats. Some examples are malware, ransomware, social engineering and phishing. In today’s world running into a phishing site, which is a site that poses as a legitimate site to get sensitive data such as credit card and personal information such as your social security numbers. Therefore, to combat these threats, cybersecurity is a necessity.  On a personal level, it is apparent that we are tech-literate enough to avoid phishing sites and emails. However, even the most tech literate can get affected with threats such as malware and ransomware or even social engineering. Therefore, the primary effect of cyber--security is being protected from the above mentioned threat’s harm. Cyber-security is a technology that usually works in the background. Therefore, the only major factor that will be different to the user is that they will not be bombarded by threats. Except for the usual pop-up from an antivirus program requesting the user for instructions on how to handle a  certain file, cybersecurity does not interact with the user. In fact most elements of cybersecurity just as a computer’s firewall, does not even need to be set up by the user. Therefore, it can be concluded that the effect of cyber-security is silent, by powerful people who own any sort of electronic device.
+  </p>
+  <h2 style="text-align: center;"id="machinelearning"></h2>
+  <br><br><br><br>
+  <h3 style="text-align: center;">Machine Learning</h3>
+  <h3 style="text-align: center;">1. What does it do? What is the state of the art of this new technology? What can be done now? What is likely to be able to do be done soon (say in the next 3 years)? What technological or other developments make this possible?</h3>
+  <p>Machine learning Machine learning is providing computers the ability to think needless of programming and allowing computers to learn automatically without human intervention or assistance. ML incorporates various technologies creating systems that learn from data in its environment and produces informed outcomes. There are 4 main types of machine learning: supervised machine learning, unsupervised machine learning, reinforcement machine learning and deep learning.
+<br><br>
+<strong>Supervised machine learning:</strong> This type of machine learning requires feedback data from a user. It tries out an algorithm and then waits for feedback on whether or not it is done correctly, to initiate more tries. Using methods such as regression, classification, prediction and gradient boosting to observe similar patterns and predict future outcomes. E.g It can predict a fraudulent credit card transaction.
+<br><br>
+<strong>Unsupervised machine learning:</strong> This type of machine learning differs from supervised by not requiring feedback from a user. The machine will continuously run regardless of feedback being inputted, unless it is hard coded. E.g consumer trends (clustering customers into similar groups based on their behaviours and characteristics) and email spam detection. 
+<br><br>
+<strong>Semi-supervised Machine learning:</strong> This is a blend of both supervised and unsupervised learning algorithms, and they have the ability to combine a little measure of labelled data along with a larger set of unlabeled data, this reduces the burden of getting more labelled data. 
+<br><br>
+<strong>Reinforcement machine learning:</strong> This type of machine learning is similar to supervised machine learning however it is not trained using sample data. The model uses trial and error to complete tasks until the feedback from a user comes positive. This method allows machines to improve their accuracy and performance at tasks.
+<br><br>
+<strong>Deep learning:</strong> This is a method of machine learning that emulates a human brain. It has layers of successful supervised machine learning and continually adjusts and improves its outcomes. Deep learning is currently used to identify objects in images and words in sounds. Soon enough, these methods of pattern recognition will be used for speech recognition, medical diagnosis purposes as well as other recognising other business problems.
+<br><br>
+Overall, In today’s world, machine learning has vastly impacted various industries such as Transportation, autonomous cars although it could take a decade or more to perfect them. In the Manufacturing industry, there are AI powered industrial robots working alongside humans that can perform only limited tasks such as assembling and staking, and predictive analysis sensors keep equipment running smoothly. E.g. At Tesla mega factories. Then, in Healthcare illnesses are more rapidly and precisely analysed, drug revelation is accelerated and streamlined, virtual nursing associates screen patients and large information investigation assists with making an increasingly personalized experience. In Education, the textbooks are digitized with the help of AI, early-stage virtual tutors assist human instructors and better tailor the experience to their individual needs. Furthermore, Customer Service: Last but hardly least, Google is working on an AI assistant that can place human-like calls to make appointments at, such as a hair salon.  
+<br><br>
+In the near future, numerous organizations are reevaluating their reaction to online assaults, in this way, soon enough we'll see AI and ML calculations playing an a lot more prominent job in observing, forestalling, and reacting to cyberattacks like database breaks, DDoS(denial of service) assaults, and different dangers. 
+</p>
+  <h3 style="text-align: center;">2. What is the likely impact? What is the potential impact of this development? What is likely to change? Which people will be most affected and how? Will this create, replace or make redundant any current jobs or technologies?</h3>
+  <p>ML and AI are revolutionizing many industries however, one of the worrying aspects is the invasion of user privacy. Virtual personal assistants like Alexa and Siri are all over. They perform tasks for you by deciphering verbal inputs or commands. Speech Recognition, Speech to Text Conversion and Text to Speech Conversion are few of the main Applications of Machine Learning. To answer this, a personal assistant searches for data or remembers one’s connected queries to gather relevant information. Same with websites, targeted/personalized advertising has been taken to the next level, this impacts any individual with an internet connection. Facial recognition can gain access to the person’ identity and their social media in no time. While the accessibility of such innovation can be beneficial in various cases, for instance, crime investigations, it can take action against those offenders. Other upsetting uses can incorporate badgering and following innocent individuals by harassing them on the web.
+<br><br>
+In terms of employment, Gartner predicts that by the end of 2019, AI will be creating more jobs than it is taking. “While 1.8 million jobs will be lost to automation – with manufacturing singled out as likely to take a hit – 2.3 million will be created. Gartner's report finds, these could be focused on education, healthcare, and the public sector.” A plethora of jobs will be generated especially for people whose expertise is in the technology field and some workers are being retrained to work alongside robots or develop them. It’s true that millions of human workers in the manufacturing industries will be replaced soon along with people in the finance industries(business analysts, insurance agents). To summarise, people with routine and predictable work that work back to back whether in retail, cab drivers, factory work, food preparation and basic administration service are most at risk. Change is approaching and people must get ready to acquire skills that are in demand and make themselves indispensable.
+</p>
+  <h3 style="text-align: center;">3. How will this affect you? In your daily life, how will this affect you? What will be different for you? How might this affect members of your family or your friends?</h3>
+  <p>These machine learning developments affect one’s life in terms of media, home security and transportation. Recommendation engines like Google and Netflix use machine learning to perceive search queries thus, the results are usually useful. However, we begin to see advertisements that spring up highlighting promotions, and imply to purchase items that are at times relevant. Evidently, Google and other platforms that spy on create targeted ads by users’ preferences and improve their click through rates. Ride-sharing apps like Uber and Lyft create use of machine learning to optimize routes and valuation by time of day and placement. Google maps uses powerful ML algorithms to indicate traffic to determine the fastest route to your destination. Moreover, the most popular music streaming services – Spotify, +200million users receive a ‘discover weekly’ playlist based on  what tracks/podcasts you browse, repeat or have skipped and these are generated by algorithms led by machine Learning.
+<br><br>
+Furthermore, Advertisers are already able to predict what forms of ads showing emotion impact my buying behaviour.  As time goes on, ads are about to still become additional tailored to the individual. Netflix revolutionised the television industry, utilizing the neural network algorithms that perpetually gathers large amounts of information regarding varied users’ activities such the date and time you watch, ratings, browsing/ scrolling behaviour. That’s why they need to receive a large user retention rate. Moreover, Fraud Detection is one amongst the foremost helpful applications of Machine Learning. Whenever we make a transaction credit/debit cards, smartphones Thousands of patterns on the client buying journey are detected and recognized by these algorithms. Therefore, we are always surrounded by artificial Intelligence making our lives uncomplicated and run smoothly. All things considered, while we appreciate that AI attacks our lives, we should just be aware and conscious of how it influences our security.</p>
+<br><br><br><br><br>
+</div>
+
+<div style="font-size:11px" class="footer">RMIT COSC2625 Introduction to Information Technology:
+Assignment 2 2020</div>
+
+</body>
+</html>
