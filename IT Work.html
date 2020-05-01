@@ -1,27 +1,156 @@
-<html>
-	<body style="text-align:center; font-family: Arial, Helvetica, sans-serif;">
-		<h1> Assignment 2 </h1>
-		<h2> IT Work, the Interview. </h2>
-		<div style="text-align:left; margin-right:25%;margin-left: 25%;">
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IT Technology</title>
+<style>
+body {margin:0;font-family: Arial, Helvetica, sans-serif;}
 
-			<h3>Demographic</h3>
-			<p> Senior Data Engineer from the financial sector of their company.</p>
-			
-			<h3>1. What kind of work is done by the IT professional? </h3>
-			<p>The IT professional that our group interviewed is one of our group member’s mum. The IT professional is <br>a Senior Data Engineer in the financial sector of the company she works at. The kind of work done by this <br>IT professional includes mostly writing sQL scripts. She mostly helps develop and write programs for the <br>data sets she works with and provides a lot of support to those she works with. This work is considered <br>more of the backend work in IT rather than the frontend work as she spends little time working with <br>customers directly. </p>
-			
-			<h3>2. What kinds of people does the IT professional interact with? Are they other IT <br>professionals? Clients? Investors? The general public?</h3>
-			<p>The interactions this IT professional has is primarily within the company. She works closely with analysts, <br>architects and IT operation support.</p>
-			
-			<h3>3. Where does the IT professional spend most of their time?</h3>
-			<p>Most of our IT professional’s time is spent in the office at a desk behind a computer. The only times that <br>she really leaves her desk will be for team meetings and other essential needs. As she is working on the <br>backend of her work, she does not spend time consulting with clients or shareholders.</p>
-			
-			<h3>4. What aspect of their position is most challenging?</h3>
-			<p>The most challenging part in their position at their company is production support. Often there will be <br>issues that are ones that you would not see often and working around those take more time. With issues, <br>they are important to the work that she does as it can help her in future when she comes across the same <br>or similar issue again. These issues are used to learn to adapt and improve future work. </p>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fb6444;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.header{
+ width: 100%;
+ height: auto;
+ color: grey;
+ background-image: url("https://cdn.discordapp.com/attachments/574913739057528833/705715269833719858/pattern.jpg");
+}
+.footer{
+ width: 100%;
+ background-color: #333;
+ color: grey;
+ padding: 4px;
+}
 
-			<h3>Extra info:</h3>
-			<p>During university, she did a Computer Science degree and that’s where her love of programming began. <br>We then asked our IT professional about what she enjoys about her job, her response to it was mostly <br>around programming. She enjoys programming a lot and started her search for jobs as a programmer <br>initially. Eventually she moved towards supportive roles and that is what got her to her position today <br>as a Senior Data Engineer.</p>
-			</div>
+list {
+  display: inline-block;
+}
 
-	</body>
+list a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+list a:hover, .dropdown:hover .dropbtn {
+  background-color: #e55e41;
+}
+
+list.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color:  #fb6444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.active {
+  background-color:#c05139;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+</style>
+</head>
+<body>
+
+
+<div style="text-align: center;font-size:200%;font-family:Impact, fantasy" class="header"><br>Assignment 2<br><br></div>
+
+<ul id="navbar">
+  <list><a href="#teamprofile">Team Profile</a></list>
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/tools.html">Tools</a></list>
+  <list><a href="#industrydata">Industry Data</a></list>
+  <list><a class="active" href="#itwork">IT Work</a></list>
+
+  <list class="dropdown">
+    <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html" class="dropbtn">IT Technology</a>
+    <div class="dropdown-content">
+      <a href="#cloudcomputing">Cloud Computing</a>
+      <a href="#augmentedreality">Augmented Reality</a>
+      <a href="#cybersecurity">Cyber Security</a>
+      <a href="#machinelearning">Machine Learning</a>
+    </div>
+  </list>
+  
+  
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/projectideas.html">Project Ideas</a></list>
+  <list><a href="#feedback">Feedback</a></list>
+  <list><a href="#groupreflection">Group Reflection</a></list>
+  <list><a href="#meetings">Meetings</a></list>
+</ul>
+
+<script>
+window.onscroll = function() {myFunction()};
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script>
+
+
+
+<div style="margin-right:15%;
+  margin-left: 15%;margin-top:5%;text-align: center;">
+  <br><br>
+  <h2> IT Work, the Interview. </h2>
+  <h3>Demographic</h3>
+  <p> Senior Data Engineer from the financial sector of their company.</p>
+			
+  <h3>1. What kind of work is done by the IT professional? </h3>
+  <p>The IT professional that our group interviewed is one of our group member’s mum. The IT professional is <br>a Senior Data Engineer in the financial sector of the company she works at. The kind of work done by this <br>IT professional includes mostly writing sQL scripts. She mostly helps develop and write programs for the <br>data sets she works with and provides a lot of support to those she works with. This work is considered <br>more of the backend work in IT rather than the frontend work as she spends little time working with <br>customers directly. </p>
+			
+  <h3>2. What kinds of people does the IT professional interact with? Are they other IT <br>professionals? Clients? Investors? The general public?</h3>
+  <p>The interactions this IT professional has is primarily within the company. She works closely with analysts, <br>architects and IT operation support.</p>
+			
+ <h3>3. Where does the IT professional spend most of their time?</h3>
+  <p>Most of our IT professional’s time is spent in the office at a desk behind a computer. The only times that <br>she really leaves her desk will be for team meetings and other essential needs. As she is working on the <br>backend of her work, she does not spend time consulting with clients or shareholders.</p>
+			
+  <h3>4. What aspect of their position is most challenging?</h3>
+  <p>The most challenging part in their position at their company is production support. Often there will be <br>issues that are ones that you would not see often and working around those take more time. With issues, <br>they are important to the work that she does as it can help her in future when she comes across the same <br>or similar issue again. These issues are used to learn to adapt and improve future work. </p>
+
+  <h3>Extra info:</h3>
+  <p>During university, she did a Computer Science degree and that’s where her love of programming began. <br>We then asked our IT professional about what she enjoys about her job, her response to it was mostly <br>around programming. She enjoys programming a lot and started her search for jobs as a programmer <br>initially. Eventually she moved towards supportive roles and that is what got her to her position today <br>as a Senior Data Engineer.</p>
+<br><br><br><br><br>
+</div>
+
+<div style="font-size:11px" class="footer">RMIT COSC2625 Introduction to Information Technology:
+Assignment 2 2020</div>
+
+</body>
 </html>
