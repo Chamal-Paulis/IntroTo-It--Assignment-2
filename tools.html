@@ -4,43 +4,254 @@
 <head>
 <style>
 html body {
-background-color: rgba(250, 246, 246, 0.842);
+background-color:#fff;
 }
-    
-a:link, a:visited {
-    
-    
-  background-color: darkorange;
-  color: white;
-  margin: -15px 650px;
-  padding: 14px 25px;
+body {margin:0;font-family: Arial, Helvetica, sans-serif;}
+li{
+font-size: 16.5px;
+font-family: Arial;
+  margin-top: 11px;
+  margin-bottom: 5px;
+  margin-right: 18%;
+  margin-left: 22%;
+  text-align: left;
+  color: rgb(58, 55, 55);
   
-  text-align: center;
-  
-  text-decoration: none;
+    
+      }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fb6444;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.header{
+ width: 100%;
+ height: auto;
+ color: grey;
+ background-image: url("https://cdn.discordapp.com/attachments/574913739057528833/705715269833719858/pattern.jpg");
+}
+.footer{
+ width: 100%;
+ background-color: #333;
+ color: grey;
+ padding: 4px;
+}
+
+list {
   display: inline-block;
 }
 
-a:hover, a:active {
-  background-color: rgb(41, 149, 238);
+list a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
 }
 
-h1 {
-font-size: 23px;
-    margin: 130px 50px 50px 50px;
-        line-height: -1;
-        text-align: center;
-        
+.list a:hover, .dropdown:hover .dropbtn {
+  background-color: #e55e41;
+}
 
+.list.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color:  #fb6444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.active {
+  background-color:#c05139;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+h1 {
+
+font-family: Arial;
+    margin: 6% 0% 5% 5%;
+    color: rgb(58, 55, 55);
+        text-align: center;
       }
+
+      h2 {
+
+font-family: Arial;
+    margin: 6% 0% 2% 3%;
+    color: rgb(58, 55, 55);
+        text-align: center;
+      }
+    
+
+      .button {
+  background-color: #4CAF50; 
+
+  color: white;
+  padding: 15px 36px;
+  text-align: center;
+  font-size: 16px;
+  margin: 35% 48%;
+  height: 100%;
+  cursor: pointer;
+
+  
+}
+
+.button1 {
+  background-color: darkorange; 
+  color: white; 
+
+}
+
+.button1:hover {
+  background-color: rgb(41, 149, 238);
+  color: white;
+}
+
+   
+
+
 
 </style>
 </head>
+<body>
+  
+
+
+<div style="text-align: center;font-size:200%;font-family:Impact, fantasy" class="header"><br>Assignment 2<br><br></div>
+
+<ul style="text-align:center" id="navbar">
+  <list><a href="#teamprofile">Team Profile</a></list>
+  <list><a class="active" href="https://itassignment2yep.s3.amazonaws.com/tools.html">Tools</a></list>
+  <list><a href="#industrydata">Industry Data</a></list>
+  <list><a href="#itwork">IT Work</a></list>
+
+  <list class="dropdown">
+    <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html" class="dropbtn">IT Technology</a>
+    <div class="dropdown-content">
+      <a href="#cloudcomputing">Cloud Computing</a>
+      <a href="#augmentedreality">Augmented Reality</a>
+      <a href="#cybersecurity">Cyber Security</a>
+      <a href="#machinelearning">Machine Learning</a>
+    </div>
+  </list>
+  
+  
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/projectideas.html">Project Ideas</a></list>
+  <list><a href="#feedback">Feedback</a></list>
+  <list><a href="#groupreflection">Group Reflection</a></list>
+   <list><a href="#meetings">Meetings</a></list>
+</ul>
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script>
+
+    
+  </style>
+
+  
+  
+  <h1 style="font-size:22px;">Link to our group's repository:</h1>
+  <a href="https://github.com/Chamal-Paulis/IntroTo-It--Assignment-2" target="_blank" class="button button1">GitHub</button></a>
+  
+  
+  <h2 style="font-size:22px;">Web resources</h2>
+  <dl>
+    <li>CSUSB ScholarWorks: Open Access Institutional Repository. <a href= "https://scholarworks.lib.csusb.edu/cgi/viewcontent.cgi?article=1283&context=jitim"target="_blank">Scholar Works</a></li>
+    
+    <li>Cloud computing – Types of cloud. (2018, July 6). ESDS - Managed Cloud Data Center in India. <a href= "https://www.esds.co.in/blog/cloud-computing-types-cloud/#sthash.GQovNheX.dpbs" target="_blank">Cloud Computing</a></li>
+    
+    <li>A brief history of cloud computing. (2017, January 24). ECPI University | Virginia, South Carolina, Florida. <a href= "https://www.ecpi.edu/blog/a-brief-history-of-cloud-computing" target="_blank">History</a></li>
+    
+    <li>What is cloud computing? A beginner’s guide. (n.d.). Cloud Computing Services | Microsoft Azure. <a href= "https://azure.microsoft.com/en-us/overview/what-is-cloud-computing/" target="_blank">Azure</a></li>
+    
+    <li>How will cloud computing affect IT jobs? (2017, August 27). Collabera IT Jobs, Staffing & Recruitment. <a href= "https://www.collabera.com/find-a-job/career-resources/how-will-cloud-computing-affect-it-jobs/" target="_blank">Collabera</a></li>
+    
+    <li>Linthicum, D. (n.d.). Yes, the cloud will kill jobs—maybe even yours. InfoWorld. <a href= "https://www.infoworld.com/article/3173263/yes-the-cloud-will-kill-jobs-maybe-even-yours.html" target="_blank">InfoWorld</a></li>
+    
+    <li>Emspak, J. (2018, June 1). What is augmented reality? livescience.com. <a href= https://www.livescience.com/34843-augmented-reality.html target="_blank">Augmented Reality</a></li> 
+    
+    <li>Islam, A. (2018, December 11). The future of augmented reality. Medium. <a href=https://medium.com/predict/the-future-of-augmented-reality-90143b98f7a3 target="_blank" >Medium</a></li>
+    
+    <li>Chamary, J. (2018, February 21). Why 'Pokemon GO' is the world's most important game. Forbes. <a href= "https://www.forbes.com/sites/jvchamary/2018/02/10/pokemon-go-science-health-benefits" target="_blank">Forbes</a></li>
+    
+    <li>What is augmented reality? (2019, December 18). The Franklin Institute. <a href= https://www.cisco.com/c/en_au/products/security/what-is-cybersecurity.html target="_blank">Frankin Institute</a></li>
+   
+    <li>What are cyber threats and what to do about them. (2020, April 24). The Missing Report. <a href = https://preyproject.com/blog/en/what-are-cyber-threats-how-they-affect-you-what-to-do-about-them/ target="_blank">Prey Project</a></li>
+    
+    <li>What is cybersecurity? Everything you need to know. (2020, April 3). <a href = https://www.cisco.com/c/en_au/products/security/what-is-cybersecurity.html target="_blank">Search Security.</a></li>
+   
+    <li>Machine learning. (2019, May 17). DeepAI. <a href = https://deepai.org/machine-learning-glossary-and-terms/machine-learning target="_blank">Deep AI</a></li>
+
+    <li>Gartner says by 2020, artificial intelligence will create more jobs than it eliminates. <a href = "https://www.gartner.com/en/newsroom/press-releases/2017-12-13-gartner-says-by-2020-artificial-intelligence-will-create-more-jobs-than-it-eliminates" target="_blank"> Gartner</a></li>
+
+    <li>What is machine learning? (n.d.). IBM - United States. <a href = https://www.ibm.com/topics/machine-learning target="_blank">IBM</a></li>
+
+    <li>Surprising facts about food waste. (1127, February). Foodbank. <a href = "https://www.foodbank.org.au/food-waste-facts-in-australia/?state=vic" target="_blank">Foodbank</a></li>
+  
+   
+  </dl>
+
+  <h2 style="font-size:22px;">Comments on the Audit Trail</h2>
 
 
 
-    <h1>Link to our group's repository:</h1>
-<a href="https://github.com/Chamal-Paulis/IntroTo-It--Assignment-2"target="_blank">GitHub</a>
+
+
+
+
+
+
+
+  <br><br><br><br><br>
+
+
+  <div style="font-size:11px" class="footer">RMIT COSC2625 Introduction to Information Technology:
+    Assignment 2 2020</div>
+
+  
+
+
 
 </body>
 </html>
