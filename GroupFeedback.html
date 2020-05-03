@@ -1,42 +1,147 @@
 <!DOCTYPE html>
-<html>
-<body>
-
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feedback</title>
 <style>
-p {
-  margin-right: 25%;
-  margin-left: 25%;
-  text-align: center;
-  font-family: arial;
+body {margin:0;font-family: Arial, Helvetica, sans-serif;}
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fb6444;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.header{
+ width: 100%;
+ height: auto;
+ color: grey;
+ background-image: url("https://cdn.discordapp.com/attachments/574913739057528833/705715269833719858/pattern.jpg");
+}
+.footer{
+ width: 100%;
+ background-color: #333;
+ color: grey;
+ padding: 4px;
 }
 
-
-h1 {
-  text-align: center;
-  font-family: arial;
-  font-size: 200%;
+list {
+  display: inline-block;
 }
 
-h2 {
+list a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+h2s {
   text-align: center;
   font-family: arial;
   font-size: 150%;
   color: red;
 }
 
-h3 {
-  text-align: center;
-  font-family: arial;
-  font-size: 100%;
-  }
+list a:hover, .dropdown:hover .dropbtn {
+  background-color: #e55e41;
+}
+
+list.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
 
 
+.dropdown-content a {
+  color:  #fb6444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.active {
+  background-color:#c05139;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 </style>
+</head>
+<body>
 
-<h1>Group Feedback</h1>
 
-<h2>Steven</h2> 
+<div style="text-align: center;font-size:200%;font-family:Impact, fantasy" class="header"><br>Assignment 2<br><br></div>
+
+<ul style="text-align: center;" id="navbar">
+  <list><a href="https://iitassignment2.s3.amazonaws.com/IIT_Assignment2.html">Team Profile</a></list>
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/tools.html">Tools</a></list>
+  <list><a href="https://ittass2.s3.amazonaws.com/Industry+Data.html">Industry Data</a></list>
+  <list><a href="https://ittass2.s3.amazonaws.com/IT+Work.html">IT Work</a></list>
+
+  <list class="dropdown">
+    <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html" class="dropbtn">IT Technology</a>
+    <div class="dropdown-content">
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#cloudcomputing">Cloud Computing</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#augmentedreality">Augmented Reality</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#cybersecurity">Cyber Security</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#machinelearning">Machine Learning</a>
+    </div>
+  </list>
+  
+  
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/projectideas.html">Project Ideas</a></list>
+  <list><a class="active" href="https://assignment2groupfeedback.s3.amazonaws.com/GroupFeedback.html">Feedback</a></list>
+  <list><a href="https://assignment2groupreflection.s3.amazonaws.com/GroupReflection.html">Group Reflection</a></list>
+   <list><a href="https://iitassignment2.s3.amazonaws.com/Meetings.html">Meetings</a></list>
+</ul>
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script>
+
+
+
+<div style="margin-right:15%;
+  margin-left: 15%;margin-top:5%;text-align: center;">
+  <h2>Feedback</h2>
+  
+  <br><br>
+
+<h2s>Steven</h2s> 
 
 <h3>Jenny</h3>
 
@@ -56,7 +161,7 @@ h3 {
 
 
 
-<br><br><h2>Jenny</h2> 
+<br><br><h2s>Jenny</h2s> 
 
 <h3>Steven</h3>
 <p>He has been constantly working well to communicate with the team whenever a problem has arised. Despite being busy with uni and working, he has displayed great initiative in completing tasks to stay up to date with the rest of the group, even if he is unable to attend a meeting. </p>
@@ -75,7 +180,7 @@ h3 {
 
 
 
-<br><br><h2>Momitha</h2> 
+<br><br><h2s>Momitha</h2s> 
 
 <h3>Steven</h3>
 <p>Steven balanced his personal and work schedule well and contributed thoroughly in the assignment. He was keeping up-to-date in every meeting and showed responsibility in finishing his tasks to a high standard. He helped us write some parts where we were unsure and communicated quite with the group.  </p>
@@ -92,7 +197,7 @@ h3 {
 
   
 
-<br><br><h2>Chamal</h2> 
+<br><br><h2s>Chamal</h2s> 
 
 <h3>Jenny</h3>
 <p>Jenny was a main driving force behind our project, organising meetings, setting up this google docs and putting us on the right path were some of the things she did. She is a fast responder with almost instantaneous replies to any inquiry we had. She also completed her all her work which was given to her in good time too. She is an excellent communicator as well.  </p>
@@ -110,7 +215,7 @@ h3 {
 
   
 
-<br><br><h2>Jeremy</h2> 
+<br><br><h2s>Jeremy</h2s> 
 
 <h3>Jenny</h3>
 <p>Great amount of effort, leadership and work from Jenny. She organized the meetings; making sure when we were available, set up the chat room and a Google Docs where we can all collaborate and edit our assignment works at the same time. She completed the majority of Industry Data and typed IT Work all on her own. Also, she communicated well with the group members and responded to any problems we faced almost instantaneously.  </p>
@@ -124,17 +229,11 @@ h3 {
 <br><h3>Momitha</h3>
 <p>She was sometimes quiet during the meetings, however she contributed tremendously to the assignment works. She did more than what was required and exceeded the group's expectations. When she had any problems or when she needed clarifications, she communicated very well to the group members and ensured that she understood everything. </p>
 
+  <br><br><br><br><br>
+</div>
 
-
-
-
-
-
-
-
-
-
-
+<div style="font-size:11px" class="footer">RMIT COSC2625 Introduction to Information Technology:
+Assignment 2 2020</div>
 
 </body>
 </html>
