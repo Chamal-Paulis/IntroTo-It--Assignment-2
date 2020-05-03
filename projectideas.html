@@ -1,50 +1,20 @@
 <!DOCTYPE html>
-<html lang="en Australian" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Project Ideas</title>
-
-
-<body>
-  
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Ideas</title>
 <style>
 body {margin:0;font-family: Arial, Helvetica, sans-serif;}
-p.big {
-    line-height: 1.7;
-  
-  }
-  h1 {
-font-size: 33px;
-font-family: Arial;
-    margin: 80px 0px 50px 40px;
-        text-align: center;
-        color: rgb(49, 47, 47);
-      }
 
-
-      h2 {
-        font-family: Arial;
-    margin: 65px 0px 60px 20px;
-        line-height: -1;
-        text-align: center;
-        color: rgb(49, 47, 47);
-        
-      }
-
-       p{
-font-size: 18px;
-font-family: Arial;
-  margin-top: -30px;
-  margin-bottom: -5px;
-  margin-right: 15%;
-  margin-left: 15%;
-  text-align: left; 
-  color: rgb(49, 47, 47);
-  
-      }
-
-
-      li{
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fb6444;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+li{
 font-size: 18px;
 font-family: Arial;
   margin-top: 11px;
@@ -54,16 +24,6 @@ font-family: Arial;
   text-align: left;
    line height: 1.5;
   color: rgb(49, 47, 47);
-  
-    
-      }
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #fb6444;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .header{
  width: 100%;
@@ -73,12 +33,15 @@ ul {
 }
 .footer{
  width: 100%;
- height: auto;
  background-color: #333;
  color: grey;
  padding: 4px;
 }
-
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 list {
   display: inline-block;
 }
@@ -92,11 +55,11 @@ list a, .dropbtn {
 
 }
 
-.list a:hover, .dropdown:hover .dropbtn {
+list a:hover, .dropdown:hover .dropbtn {
   background-color: #e55e41;
 }
 
-.list.dropdown {
+list.dropdown {
   display: inline-block;
 }
 
@@ -132,36 +95,34 @@ list a, .dropbtn {
   top: 0;
   width: 100%
 }
-
 </style>
 </head>
 <body>
-  
 
 
 <div style="text-align: center;font-size:200%;font-family:Impact, fantasy" class="header"><br>Assignment 2<br><br></div>
 
-<ul style="text-align:center" id="navbar">
-  <list><a href="#teamprofile">Team Profile</a></list>
+<ul style="text-align: center;" id="navbar">
+  <list><a href="https://iitassignment2.s3.amazonaws.com/IIT_Assignment2.html">Team Profile</a></list>
   <list><a href="https://itassignment2yep.s3.amazonaws.com/tools.html">Tools</a></list>
-  <list><a href="#industrydata">Industry Data</a></list>
-  <list><a href="#itwork">IT Work</a></list>
+  <list><a href="https://ittass2.s3.amazonaws.com/Industry+Data.html">Industry Data</a></list>
+  <list><a href="https://ittass2.s3.amazonaws.com/IT+Work.html">IT Work</a></list>
 
   <list class="dropdown">
     <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html" class="dropbtn">IT Technology</a>
     <div class="dropdown-content">
-      <a href="#cloudcomputing">Cloud Computing</a>
-      <a href="#augmentedreality">Augmented Reality</a>
-      <a href="#cybersecurity">Cyber Security</a>
-      <a href="#machinelearning">Machine Learning</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#cloudcomputing">Cloud Computing</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#augmentedreality">Augmented Reality</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#cybersecurity">Cyber Security</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#machinelearning">Machine Learning</a>
     </div>
   </list>
   
   
   <list><a class="active" href="https://itassignment2yep.s3.amazonaws.com/projectideas.html">Project Ideas</a></list>
-  <list><a href="#feedback">Feedback</a></list>
-  <list><a href="#groupreflection">Group Reflection</a></list>
-   <list><a href="#meetings">Meetings</a></list>
+  <list><a href="https://assignment2groupfeedback.s3.amazonaws.com/GroupFeedback.html">Feedback</a></list>
+  <list><a href="https://assignment2groupreflection.s3.amazonaws.com/GroupReflection.html">Group Reflection</a></list>
+   <list><a href="https://iitassignment2.s3.amazonaws.com/Meetings.html">Meetings</a></list>
 </ul>
 
 <script>
@@ -180,26 +141,28 @@ function myFunction() {
   }
 } 
 </script>
-     
-  </style>
 
- 
-      
-        <h1>Project Fade - Food Expiration App</h1> 
 
-        <h2 style="font-size:24px;">Overview</h2>
+
+<div style="margin-right:15%;
+  margin-left: 15%;margin-top:5%;text-align: center;">
+  <h2>Project Fade - Food Expiration App</h2>
+  
+  <br><br> 
+
+        <h2>Overview</h2>
         <p class="big">An expiration food date app notifies you when your food is nearly expired/already expired. The user must install a camera/scanner on the inside their fridge/pantry so that food can be scanned and show up on a mobile (iOS & Android) application for the user to see. Users can then be reminded of when different food is about to go bad. They may also be able to specify what they should buy when grocery shopping with a shopping list feature.
 
 
         </p1>
-        <h2 style="font-size:24px;">Description</h2>
+        <h2>Description</h2>
 <p class="big">
   The Fade app will be available on mobile platforms such as Android and iOS. Fade is linked to a product that’s sold separately which is a gadget that the consumer must attach to a convenient place such as their fridge or pantry. 
   This device is made up of a screen and small camera which acts as a scanner and its activated when a unique code on the device is entered into the app. This device inputs all the food products scanned by the user and sends this data to the app. 
   Then, the app displays all the food products that are in stock/near to expiration.To make it straightforward for the users, the food items will be labelled with a green icon if there’s enough time to safely consume the food. The items that are soon to expire (less than two days to expiration) will be labelled with yellow and the items that have passed the expiration date will be labelled in red. Fade will check the ingredients the user currently owns and will be recommended recipes from a database of pre-entered recipes. 
   For example, if the user gets a notification saying bananas are close to expiration, it will send you a recipe calling for ripe bananas. 
   </p1>
-<h2 style="font-size:24px;">Main Features</h2>
+<h2>Main Features</h2>
 <p class="big">
 
     <li>Shows expiry dates of food products in a colour coded format and offers safety storage info by barcode scanning </li>
@@ -210,7 +173,7 @@ function myFunction() {
     <li>Create a shopping list for groceries - Recommendations of what to purchase based on history and coupons</li>
     
 </p1>
-<h2 style="font-size:24px;">Benefits to Society</h2>
+<h2>Benefits to Society</h2>
 <p class="big">
   Fade elicits a healthy and balanced lifestyle by encouraging the user to keep track of their ingredients and by offering recipes to create at home. 
   People can often find themselves resorting to ordering delivery or going outside to eat, spending an obscene amount of money over a long period. However, the Expiration Date App may motivate users to learn how to prepare their food through provided recipes. 
@@ -218,15 +181,15 @@ function myFunction() {
   <i>"Australian households throw away 2.5 million tonnes of edible food each year – that equates to nearly 300 kilograms per person!".</i> 
   Thus, the app will also help minimise food wastage and better improve the environment by reducing CO2 production.
 
-<h2 style="font-size:24px;">Conclusion</h2>
+<h2>Conclusion</h2>
 <p class="big">
   Overall, this app will draw attention to educating consumers regarding the quality and safety of food products. With reminder and shopping lists, the users will be able to purchase more appropriate quantities, instead of buying huge quantities of foods that may go bad. Furthermore, this will significantly help in controlling the waste that comes from every household which results in the reduction in food waste in the country.
 </p1>
-
-<br><br><br><br><br>
+  <br><br><br><br><br>
+</div>
 
 <div style="font-size:11px" class="footer">RMIT COSC2625 Introduction to Information Technology:
-  Assignment 2 2020</div>
+Assignment 2 2020</div>
 
 </body>
 </html>
