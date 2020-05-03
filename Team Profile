@@ -2,21 +2,145 @@
 <html lang="en-AU">
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Team Profile</title>
 <style>
+body {margin:0;font-family: Arial, Helvetica, sans-serif;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fb6444;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.header{
+ width: 100%;
+ height: auto;
+ color: grey;
+ background-image: url("https://cdn.discordapp.com/attachments/574913739057528833/705715269833719858/pattern.jpg");
+}
+.footer{
+ width: 100%;
+ background-color: #333;
+ color: grey;
+ padding: 4px;
+}
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+list {
+  display: inline-block;
+}
+
+list a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+list a:hover, .dropdown:hover .dropbtn {
+  background-color: #e55e41;
+}
+
+list.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color:  #fb6444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.active {
+  background-color:#c05139;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 </style>
 </head>
-<body style ="text-align:center;font-family: Arial, Helvetica, sans-serif;">
+<body>
 
 
-<h2 style= >Team Profile</h2>
+<div style="text-align: center;font-size:200%;font-family:Impact, fantasy" class="header"><br>Assignment 2<br><br></div>
+
+<ul style="text-align: center;" id="navbar">
+  <list><a class="active" href="https://iitassignment2.s3.amazonaws.com/IIT_Assignment2.html">Team Profile</a></list>
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/tools.html">Tools</a></list>
+  <list><a href="https://ittass2.s3.amazonaws.com/Industry+Data.html">Industry Data</a></list>
+  <list><a href="https://ittass2.s3.amazonaws.com/IT+Work.html">IT Work</a></list>
+
+  <list class="dropdown">
+    <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html" class="dropbtn">IT Technology</a>
+    <div class="dropdown-content">
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#cloudcomputing">Cloud Computing</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#augmentedreality">Augmented Reality</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#cybersecurity">Cyber Security</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#machinelearning">Machine Learning</a>
+    </div>
+  </list>
+  
+  
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/projectideas.html">Project Ideas</a></list>
+  <list><a href="https://assignment2groupfeedback.s3.amazonaws.com/GroupFeedback.html">Feedback</a></list>
+  <list><a href="https://assignment2groupreflection.s3.amazonaws.com/GroupReflection.html">Group Reflection</a></list>
+   <list><a href="https://iitassignment2.s3.amazonaws.com/Meetings.html">Meetings</a></list>
+</ul>
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script>
+
+
+
+<div style="margin-right:15%;
+  margin-left: 15%;margin-top:5%;text-align: center;">
+  <h2>Team Profile</h2>
+  
+  <br><br>
 <h3 style= >Personal Information</h3>
 
-<div style="text-align:left; margin-right:25%;margin-left: 25%;">
+
 <IMG style="WIDTH:120px; HEIGHT:165px;border:1px solid blue" SRC="https://cdn.discordapp.com/attachments/696921753275858963/704374336512983130/2999AC0215858083439_P_002.JPG" class="center">
 <br>
 <p>Hello! My name is Jeremy Ng Kwik Tung. I am currently studying a Bachelor of Information Technology at RMIT.<br><br>My student number is s3842858. I was born in Mauritius but came here to Australia in 2011 to get better access to education and to have a better life.<br> <br>I can also speak three languages which are French, English and Creole. For my hobbies, I love travelling, learning new things and playing video games. As of right now, I do not have a specific interest in Information Technology but I have some interest in programming.<br><br> As for my IT experience, I have a bit of experience in game design and programming, though I am a beginner in both sides. In terms of programming language, I have used Java, Visual Basic and Python before but I still have a lot more to learn.
@@ -87,13 +211,18 @@ img {
 <p > - Most of us have yet to develop a clear future career in our minds, while some have a good general idea. <br><br> - If planning on working for a company, some of us would like to work for one with clear values. For example, most people would like to work for a company that puts emphasis on the quality of work, integrity, security, and consistency. <br> <br> - We’ve considered undergraduate programs and internships in order to build up experience.
 </p>
 <br>
-<p> There are quite a numvber of people would move overseas to advance their career. This was the only different factor that we came across. 
+<p> There are quite a number of people would move overseas to advance their career. This was the only different factor that we came across. 
  <br>
 <h4 style="text-aling:center">We came across some similarities as well differences in our career plans. </h4>
 
 <p >Something similar with our entire group is that we would like to all gain new experiences through various outlets, such as internships and other programs, to help us grow as people and to be able to utilise our opportunities not just right after uni but also in future. We may not all stay in the same job forever, most of us won’t. Differences include the actual job itself, though many of us have described our ‘ideal job’ to be something we aren’t too sure about, our descriptions of the jobs we want are all different.  
 </p>
-<br>
+
+  <br><br><br><br><br>
+</div>
+
+<div style="font-size:11px" class="footer">RMIT COSC2625 Introduction to Information Technology:
+Assignment 2 2020</div>
 
 </body>
 </html>
