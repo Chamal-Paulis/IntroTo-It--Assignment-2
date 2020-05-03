@@ -1,35 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Group Reflection</title>
+<style>
+body {margin:0;font-family: Arial, Helvetica, sans-serif;}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #fb6444;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.header{
+ width: 100%;
+ height: auto;
+ color: grey;
+ background-image: url("https://cdn.discordapp.com/attachments/574913739057528833/705715269833719858/pattern.jpg");
+}
+.footer{
+ width: 100%;
+ background-color: #333;
+ color: grey;
+ padding: 4px;
+}
+
+list {
+  display: inline-block;
+}
+
+list a, .dropbtn {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+list a:hover, .dropdown:hover .dropbtn {
+  background-color: #e55e41;
+}
+
+list.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color:  #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color:  #fb6444;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.active {
+  background-color:#c05139;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+</style>
+</head>
 <body>
 
-<style>
-p {
-  margin-top: 0%;
-  margin-bot: 0%;
-  margin-right: 25%;
-  margin-left: 25%;
-  text-align: center;
-  font-family: arial;
-}
 
-h1 {
-  text-align: center;
-  font-family: arial;
-  font-size: 34;
-}
+<div style="text-align: center;font-size:200%;font-family:Impact, fantasy" class="header"><br>Assignment 2<br><br></div>
 
-h2 {
-  text-align: center;
-  font-family: arial;
-  font-size: 18;
+<ul style="text-align: center;" id="navbar">
+  <list><a href="https://iitassignment2.s3.amazonaws.com/IIT_Assignment2.html">Team Profile</a></list>
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/tools.html">Tools</a></list>
+  <list><a href="https://ittass2.s3.amazonaws.com/Industry+Data.html">Industry Data</a></list>
+  <list><a href="https://ittass2.s3.amazonaws.com/IT+Work.html">IT Work</a></list>
 
-}
+  <list class="dropdown">
+    <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html" class="dropbtn">IT Technology</a>
+    <div class="dropdown-content">
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#cloudcomputing">Cloud Computing</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#augmentedreality">Augmented Reality</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#cybersecurity">Cyber Security</a>
+      <a href="https://ititassignment2nkt.s3.amazonaws.com/ittechnology.html#machinelearning">Machine Learning</a>
+    </div>
+  </list>
+  
+  
+  <list><a href="https://itassignment2yep.s3.amazonaws.com/projectideas.html">Project Ideas</a></list>
+  <list><a href="https://assignment2groupfeedback.s3.amazonaws.com/GroupFeedback.html">Feedback</a></list>
+  <list><a class="active" href="https://assignment2groupreflection.s3.amazonaws.com/GroupReflection.html">Group Reflection</a></list>
+   <list><a href="https://iitassignment2.s3.amazonaws.com/Meetings.html">Meetings</a></list>
+</ul>
+
+<script>
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+} 
+</script>
 
 
-</style>
 
-<h1>Group Reflection</h1> 
-
+<div style="margin-right:15%;
+  margin-left: 15%;margin-top:5%;text-align: center;">
+  <h2>Group Reflection</h2>
+  
+  <br><br>
 
 <h2>What worked well?</h2> 
 
@@ -55,11 +159,11 @@ h2 {
 <br><br><h2>At least one thing you have learned about groups</h2> 
 <p>The importance of leadership was demonstrated especially during team meetings. It was beneficial to have at least one or more people guiding the discussion towards the assessment. It allowed us to be quick and efficient with our time when trying to get work done. </p>
 
+  <br><br><br><br><br>
+</div>
 
-
-
-
-
+<div style="font-size:11px" class="footer">RMIT COSC2625 Introduction to Information Technology:
+Assignment 2 2020</div>
 
 </body>
 </html>
